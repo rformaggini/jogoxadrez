@@ -1,29 +1,27 @@
 package br.com.xadrez.tabuleiro;
 
-public class Posicao {
-	
+public class Tabuleiro {
+
 	private Integer linha;
 	private Integer coluna;
+	private Peca[][] pecas;
 	
 	
-	public Posicao() {
-		
-	}
 	
-	public Posicao(Integer linha, Integer coluna) {
-		super();
+	public Tabuleiro(Integer linha, Integer coluna) {
+
 		this.linha = linha;
 		this.coluna = coluna;
+		pecas = new Peca[linha][coluna];
+		
 	}
 	
 	public Integer getLinha() {
 		return linha;
 	}
-	
 	public void setLinha(Integer linha) {
 		this.linha = linha;
 	}
-	
 	public Integer getColuna() {
 		return coluna;
 	}
@@ -31,12 +29,13 @@ public class Posicao {
 		this.coluna = coluna;
 	}
 	
-	@Override
-	public String toString() {
-		return "Posicao " + linha + ", " + coluna ;
+	public Peca	peca(Integer linha, Integer coluna) {
+		return pecas[linha][coluna];
 	}
 	
-	
+	public Peca peca(Posicao posicao) {
+		return pecas[posicao.getLinha()][posicao.getColuna()];
+	}
 	
 	
 }
