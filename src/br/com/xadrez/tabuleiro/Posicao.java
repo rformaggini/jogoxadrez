@@ -4,11 +4,8 @@ public class Posicao {
 	
 	private Integer linha;
 	private Integer coluna;
-	
-	
-	public Posicao() {
-		
-	}
+
+	public Posicao() {	}
 	
 	public Posicao(Integer linha, Integer coluna) {
 		super();

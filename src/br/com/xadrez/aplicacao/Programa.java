@@ -8,11 +8,7 @@ public class Programa {
 		
 		Partida partida = new Partida();
 		UI.imprimeTabuleiro(partida.getPecas());
-		
-		
-		
-		
-	
+
 	}
 
 }
