@@ -5,9 +5,7 @@ public class Tabuleiro {
 	private Integer linha;
 	private Integer coluna;
 	private Peca[][] pecas;
-	
-	
-	
+
 	public Tabuleiro(Integer linha, Integer coluna) {
 
 		if(linha < 1 || coluna < 1){
